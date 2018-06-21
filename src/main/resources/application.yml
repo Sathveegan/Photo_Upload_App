@@ -1,0 +1,6 @@
+AWSS3:
+    region: <<region>>
+    endpointUrl: <<endpointUrl>>
+    bucketName: <<bucketName>>
+    accessKey: <<accessKey>>
+    secretKey: <<secretKey>>

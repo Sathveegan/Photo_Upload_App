@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="image/favicon.png">
+<title>Photo Upload App</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300"
+	rel="stylesheet">
+<link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet">
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+	<div class="container">
+		<form name="uploadForm" enctype="multipart/form-data" method="post">
+			<h1>Photo Upload App</h1>
+			<div class="avatar-upload">
+				<div class="avatar-edit">
+					<input type="file" name="imageUpload" id="imageUpload"
+						accept=".png, .jpg, .jpeg" required onchange="validateFileType()"/> <label for="imageUpload"></label>
+				</div>
+				<div class="avatar-preview">
+					<div id="imagePreview"
+						style="background-image: url(image/upload.png);"></div>
+				</div>
+			</div>
+			<div class="div">
+				<h2 id="status"></h2><br>
+				<a id="link"></a>
+			</div>
+			<div class="div">
+				<button type="button" class="button" onclick="uploadFile()">Upload</button>
+			</div>
+		</form>
+	</div>
+
+	<script
+		src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>
